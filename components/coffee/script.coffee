@@ -1,2 +1,2 @@
-$ ->
-  $('h1').append(" Hello Worlds Im here again!");
+do addStuff = ->
+  $('#content').append("Don't miss it!")

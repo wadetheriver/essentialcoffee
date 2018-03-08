@@ -1,3 +1,5 @@
-$(function() {
-  return $('h1').append(" Hello Worlds Im here again!");
-});
+var addStuff;
+
+(addStuff = function() {
+  return $('#content').append("Don't miss it!");
+})();
