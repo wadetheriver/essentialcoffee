@@ -1,16 +1,33 @@
-array = [1..5]
+# name = "wade"
+#
+# if name == 'wade'
+# then name = 'wade spane'
+# else name = 'Ellie Mae'
+#
+# if name == 'wade'
+#   name = 'wade spane'
+# else name = 'Ellie Mae'
+#
+# if name is 'wade'
+#   name = 'wade spane'
+#
+# if name isnt 'wade'
+#   name = 'unknown'
 
-names = [
-  'Wade Spane',
-  'Ellie Mae',
-  'June Bug'
-  'Sonny Boy'
-][0..2]
+dance = ->
+  alert 'mambo'
+
+happy = false
+
+dance() if happy isnt true
 
 
-names[1..2] = [
-  'bob',
-  'pete'
-]
+someVar = "Hello"
+$('#content').append("#{someVar}") if someVar?
 
-console.log (names)
+# Check var undefined or null
+# if var is not defined in script
+if someOtherVar?
+  console.log (someOtherVar)
+
+footprints = yeti ? "bear"

@@ -1,10 +1,40 @@
-var array, names, ref,
-  splice = [].splice;
+// name = "wade"
 
-array = [1, 2, 3, 4, 5];
+// if name == 'wade'
+// then name = 'wade spane'
+// else name = 'Ellie Mae'
 
-names = ['Wade Spane', 'Ellie Mae', 'June Bug', 'Sonny Boy'].slice(0, 3);
+// if name == 'wade'
+//   name = 'wade spane'
+// else name = 'Ellie Mae'
 
-splice.apply(names, [1, 2].concat(ref = ['bob', 'pete'])), ref;
+// if name is 'wade'
+//   name = 'wade spane'
 
-console.log(names);
+// if name isnt 'wade'
+//   name = 'unknown'
+var dance, footprints, happy, someVar;
+
+dance = function() {
+  return alert('mambo');
+};
+
+happy = false;
+
+if (happy !== true) {
+  dance();
+}
+
+someVar = "Hello";
+
+if (someVar != null) {
+  $('#content').append(`${someVar}`);
+}
+
+// Check var undefined or null
+// if var is not defined in script
+if (typeof someOtherVar !== "undefined" && someOtherVar !== null) {
+  console.log(someOtherVar);
+}
+
+footprints = typeof yeti !== "undefined" && yeti !== null ? yeti : "bear";
