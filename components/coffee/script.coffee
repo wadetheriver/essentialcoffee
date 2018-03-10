@@ -14,12 +14,12 @@ myObject = {
           title: "God of Mischief"
         }
   ]
+  addStuff: (addWhat) ->
+            $('#content').append("<h2>#{addWhat}</h2>")
 }
 
-do addStuff = ->
-  addALittle = "whoa Thor God of Thunder"
-  a=true
-  $('#content').append(addALittle)
+
+myObject.addStuff("Thor God of Thunder");
 
 console.log myObject
 console.log JSON.stringify(myObject)

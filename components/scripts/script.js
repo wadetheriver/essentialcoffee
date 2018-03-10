@@ -1,4 +1,4 @@
-var addStuff, myList, myObject;
+var myList, myObject;
 
 myList = [
   'Wade',
@@ -21,15 +21,13 @@ myObject = {
       name: "Loki",
       title: "God of Mischief"
     }
-  ]
+  ],
+  addStuff: function(addWhat) {
+    return $('#content').append(`<h2>${addWhat}</h2>`);
+  }
 };
 
-(addStuff = function() {
-  var a, addALittle;
-  addALittle = "whoa Thor God of Thunder";
-  a = true;
-  return $('#content').append(addALittle);
-})();
+myObject.addStuff("Thor God of Thunder");
 
 console.log(myObject);
 
