@@ -1,40 +1,38 @@
-// name = "wade"
+var dog, i, j, k, key, l, len, len1, len2, name, names, value;
 
-// if name == 'wade'
-// then name = 'wade spane'
-// else name = 'Ellie Mae'
+names = ["Barot Bellingham", "Constance Smith", "Hassum Harrod", "Hillary Goldwynn", "Xhou Ta"];
 
-// if name == 'wade'
-//   name = 'wade spane'
-// else name = 'Ellie Mae'
+for (j = 0, len = names.length; j < len; j++) {
+  name = names[j];
+  console.log(name);
+}
 
-// if name is 'wade'
-//   name = 'wade spane'
+// get index and name from array
+for (i = k = 0, len1 = names.length; k < len1; i = ++k) {
+  name = names[i];
+  console.log(`${i} ${name}`);
+}
 
-// if name isnt 'wade'
-//   name = 'unknown'
-var dance, footprints, happy, someVar;
+for (i = l = 0, len2 = names.length; l < len2; i = ++l) {
+  name = names[i];
+  if (name !== "Xhou Ta" || "Hillary Goldwynn") {
+    console.log(`${i} ${name}`);
+  }
+}
 
-dance = function() {
-  return alert('mambo');
+// Navigate an object
+dog = {
+  name: "Ellie",
+  collar: "Pink",
+  breed: "Redbone",
+  info: function() {
+    return console.log(`${this.name} ${this.collar} ${this.breed}`);
+  }
 };
 
-happy = false;
-
-if (happy !== true) {
-  dance();
+for (key in dog) {
+  value = dog[key];
+  if (key !== info) {
+    console.log(`${key}: ${value}`);
+  }
 }
-
-someVar = "Hello";
-
-if (someVar != null) {
-  $('#content').append(`${someVar}`);
-}
-
-// Check var undefined or null
-// if var is not defined in script
-if (typeof someOtherVar !== "undefined" && someOtherVar !== null) {
-  console.log(someOtherVar);
-}
-
-footprints = typeof yeti !== "undefined" && yeti !== null ? yeti : "bear";
