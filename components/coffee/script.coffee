@@ -1,7 +1,30 @@
-myFunction = ->
-  console.log('hello')
+# info = [
+#   'Wade Spane',
+#   'http://somewebsite.com',
+#   'http://anotherwebsite.com',
+#   'http://thirdsite.com'
+# ]
+#
+# # splat
+# fillout = (name, links...) ->
+#   $('#content').append("#{name} </br>")
+#   for item in links
+#     $('#content').append("#{item} </br>")
+#
+# fillout(info...)
 
-myFunction()
+info = [
+  'Ray Villalobos'
+  'Beaner',
+  'http://planetoftheweb.com'
+  'http://authoredcontent.com'
+  'http://iviewsource.com'
+]
 
-myFunction2 = (a,b) ->
-  console.log ('hi')
+fillOut = (name, race, links...) ->
+  $('#content').append "#{name}<br>"
+  $('#content').append "#{race}<br>"
+  for item in links
+    $('#content').append "#{item}<br>"
+
+fillOut info...
