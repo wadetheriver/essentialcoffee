@@ -28,5 +28,5 @@ dog = {
     console.log("#{this.name} #{this.collar} #{this.breed}")
 }
 
-for key, value of dog when key isnt info
+for key, value of dog when key isnt "info"
   console.log ("#{key}: #{value}")

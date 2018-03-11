@@ -32,7 +32,7 @@ dog = {
 
 for (key in dog) {
   value = dog[key];
-  if (key !== info) {
+  if (key !== "info") {
     console.log(`${key}: ${value}`);
   }
 }
