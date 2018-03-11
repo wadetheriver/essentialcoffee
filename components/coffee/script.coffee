@@ -1,17 +1,4 @@
-# info = [
-#   'Wade Spane',
-#   'http://somewebsite.com',
-#   'http://anotherwebsite.com',
-#   'http://thirdsite.com'
-# ]
-#
-# # splat
-# fillout = (name, links...) ->
-#   $('#content').append("#{name} </br>")
-#   for item in links
-#     $('#content').append("#{item} </br>")
-#
-# fillout(info...)
+#splats
 
 info = [
   'Ray Villalobos'
@@ -21,10 +8,18 @@ info = [
   'http://iviewsource.com'
 ]
 
+
 fillOut = (name, race, links...) ->
   $('#content').append "#{name}<br>"
   $('#content').append "#{race}<br>"
   for item in links
     $('#content').append "#{item}<br>"
 
-fillOut info...
+fillOut(info...)
+# fillOut("dog","cat", info...)
+
+
+# Also use a splat (spread to add array to anoter)
+parts = ['shoulders', 'knees']
+lyrics = ['head', parts..., 'and', 'toes']
+console.log lyrics
