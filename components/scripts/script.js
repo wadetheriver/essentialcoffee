@@ -19,7 +19,7 @@ fillOut(...info);
 
 // fillOut("dog","cat", info...)
 
-// Also use a splat (spread to add array to anoter)
+// Also use a splat (spread) to add array to anoter
 parts = ['shoulders', 'knees'];
 
 lyrics = ['head', ...parts, 'and', 'toes'];
