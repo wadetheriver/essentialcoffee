@@ -1,22 +1,20 @@
-var append, color;
+var fill, fill2;
 
-append = function(item) {
-  return $("#content").append(`${item}`);
+fill = function(item) {
+  $("#content").append(`${item} </br>`);
+  // # returns window
+  // console.log this
+
+  // returns the fill function
+  return console.log(this.fill);
 };
 
-color = 'red';
+fill('Ellie');
 
-switch (color) {
-  case 'pink':
-    append('Ellie');
-    break;
-  case 'green':
-    append('Juno');
-    break;
-  case 'red':
-  case 'orange':
-    append('Mattie');
-    break;
-  default:
-    append('Unknown Dog');
-}
+// immediately invokes closure
+(fill2 = function(item) {
+  $("#content").append(`${item} </br>`);
+  return console.log(this.fill2);
+})('Maggie');
+
+fill2('marlin');

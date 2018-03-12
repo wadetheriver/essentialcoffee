@@ -1,10 +1,17 @@
-append = (item) ->
-  $("#content").append "#{item}"
+fill = (item) ->
+  $("#content").append "#{item} </br>"
 
-color = 'red'
+  # # returns window
+  # console.log this
 
-switch color
-  when 'pink' then append 'Ellie'
-  when 'green' then append 'Juno'
-  when 'red', 'orange' then append 'Mattie'
-  else append 'Unknown Dog'
+  # returns the fill function
+  console.log @fill
+
+fill 'Ellie'
+
+# immediately invokes closure
+do fill2 = (item = 'Maggie') ->
+  $("#content").append "#{item} </br>"
+  console.log @fill2
+
+fill2 'marlin'
