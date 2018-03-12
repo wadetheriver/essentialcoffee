@@ -4,7 +4,6 @@ fill = function(item) {
   $("#content").append(`${item} </br>`);
   // # returns window
   // console.log this
-
   // returns the fill function
   return console.log(this.fill);
 };

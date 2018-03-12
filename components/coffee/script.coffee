@@ -3,7 +3,6 @@ fill = (item) ->
 
   # # returns window
   # console.log this
-
   # returns the fill function
   console.log @fill
 
