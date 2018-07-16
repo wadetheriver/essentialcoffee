@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat');
+    babel = require('gulp-babel');
 
 
 var jsSources = [
@@ -29,6 +30,9 @@ gulp.task('coffee', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
+          .pipe(babel({
+            presets: ['es2015']
+          }))
           .pipe(uglify())
           .pipe(concat('script.js'))
           .pipe(gulp.dest('./js'));

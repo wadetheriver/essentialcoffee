@@ -1,0 +1,1 @@
+"use strict";var fill,fill2;(fill=function(l){return $("#content").append(l+" </br>"),console.log(this.fill)})("Ellie"),(fill2=function(l){return $("#content").append(l+" </br>"),console.log(this.fill2)})("Maggie"),fill2("marlin");

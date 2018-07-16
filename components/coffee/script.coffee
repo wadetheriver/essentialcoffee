@@ -6,7 +6,7 @@ fill = (item) ->
   # returns the fill function
   console.log @fill
 
-fill 'Ellie'
+fill 'Ellie Bird'
 
 # immediately invokes closure
 do fill2 = (item = 'Maggie') ->
